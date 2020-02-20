@@ -7,3 +7,5 @@ steps:
     image: gradle:6.2.0-jdk11
     commands:
       - gradle assemble
+    environment:
+      GRADLE_OPTS: -Dorg.gradle.daemon=false
