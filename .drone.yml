@@ -1,0 +1,9 @@
+name: test
+type: docker
+kind: pipeline
+
+steps:
+  - name: test
+    image: gradle:6.2.0-jdk11
+    commands:
+      - gradle assemble
